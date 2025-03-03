@@ -2,20 +2,36 @@
     margin:0;
     padding:0;
 }
+@media screen and(max-width:764px){
+  .heads{
+    font-size: medium;
+    width: 100%;
+  }
+}
 .heads{
     font-size: medium;
     width: 100%;
     margin-right: auto;
     padding: 0;
     padding-top:0;
-    background-color: coral;
+    background-color:#2BC0E4;
 
 }
 .bod{
-  background-color: #eae3e3;
+  background-color: #EAECC6;
   background-size: cover;
   background-position: center;
 
+}
+@media screen and(max-width:768px){
+  .logo{
+  width:60px;
+  border-radius: 50%;
+  height: auto;
+  position:relative;
+  top:1rem;
+  left:0.5rem;
+  }
 }
 .logo{
     width:60px;
@@ -24,22 +40,34 @@
     position:relative;
     top:1rem;
     left:0.5rem;
-    animation:blink 3s infinite;
     transition:box-shadow 0.9s ease-in;
 }
 .logo:hover{
     box-shadow: 0 0 35px rgba(5, 78, 236, 0.8);
     cursor: pointer;
 }
+@media screen and(max-width:768px){
+  .liss{
+      font-size:10px;
+      float:right;
+      display: inline-block;
+      position: relative;
+      right:2rem;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+}
 .liss{
     display:inline-block;
     color:#000404;
     position:relative;
+    right:1rem;
     bottom:2rem;
     float:right;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size:medium;
+    font-size:small;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -335,20 +363,22 @@ a{
    transition:text-shadow 0.6s ease-in-out;
    animation: glowing-float 2s infinite ease-in-out;
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:768px){
   #tit{
     text-align:center;
+    font-size: clamp(10px,8vw);
     justify-content:center;
     flex-direction:row;
     position:relative;
-    top:1rem;
+    top:3rem;
+    left:1.3rem;
     }
 }
 #tit span {
     display: inline-block;
     animation: pop 2s ease-in-out;
     position:relative;
-    bottom:5rem;
+    bottom:3rem;
     left:11rem;
     opacity:0;
     animation-fill-mode: forwards;
@@ -544,14 +574,13 @@ a{
 .bod1{
   background:radial-gradient(circle, rgba(123,116,210,1) 0%, rgba(222,86,23,1) 35%, rgba(0,74,255,1) 100%);
 }
-@media screen and (max-width:768px){
+
   .bod1{
      flex-direction: column;
      align-items:center;
      width:100;
      text-align: center;
   }
-}
 #creat{
     position: relative;
     top:2rem;
@@ -573,7 +602,7 @@ a{
   background-position: relative;
   border-radius: 50%;
   position: relative;
-  left:1.3rem;
+  left:2rem;
   top:1.5rem;
   height: auto;
   object-fit: cover;
@@ -604,6 +633,14 @@ a{
   box-shadow: 0 0 35px rgba(12, 72, 239, 0.8);
   cursor: pointer;
 }
+@media screen and(max-width:768px){
+  .lm{
+    position: relative;
+    left:7.4rem;
+    bottom:6rem;
+  }
+
+}
 .lm{
   position: relative;
   left:7.4rem;
@@ -621,7 +658,7 @@ a{
   height:600px;
     font-size: larger;
     border:3px solid black;
-    border-width: 10px 8px 10px 8px;
+    border-width: 4px 6px 6px 8px;
     overflow: hidden;
     position: relative;
     top:6rem;
@@ -633,6 +670,22 @@ a{
 .log:hover{
     box-shadow:0 0 50px rgb(9, 221, 214);
     cursor:grab;
+}
+@media screen and(max-width:764px){
+  .log{
+    width:800px;
+    height:600px;
+      font-size: larger;
+      border:3px solid black;
+      border-width: 4px 6px 6px 8px;
+      overflow: hidden;
+      position: relative;
+      top:6rem;
+      border-radius: 25%;
+      font-weight: 200;
+      justify-content: center;
+}
+  
 }
 #mail{
   position:relative;
@@ -711,7 +764,7 @@ input:hover{
     background: linear-gradient(to right, #2BC0E4 0%, #EAECC6  61%, #e9220f  100%);
      top:5rem;
      margin: 12px;
-     padding: 15px 45px;
+     padding: 10px 25px;
      text-align: center;
      text-transform: uppercase;
      transition: 0.7s;
@@ -730,7 +783,13 @@ input:hover{
      text-decoration: none;
    }
 .bod2{
-  background-color: white;
+  background-color: #EAECC6;
+}
+@media screen and(max-width:768px){
+  .mobile{
+     position: absolute;
+     justify-content: center;
+  }
 }
 .mobile{
     position:relative;
@@ -767,6 +826,16 @@ input:hover{
     to{
         transform:translateX(-100%);
     }
+}
+@media screen and(max-width:764px){
+  .mob_items{
+    position: absolute;
+    justify-content:center;
+    display:flex;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+
+  }
 }
 .mob-col{
   position:relative;
@@ -967,16 +1036,17 @@ input:hover{
   position:relative;
   display:flex;
   background: linear-gradient(to right, #2BC0E4 0%, #EAECC6  61%, #e9220f  100%);
-   top:1.2rem;
+   top:0.8rem;
+   left:4rem;
    margin: 12px;
-   padding: 10px 35px;
+   padding: 10px 25px;
    text-align: center;
    text-transform: uppercase;
    transition: 0.7s;
    background-size: 200% auto;
    color: rgb(24, 8, 8);            
    box-shadow: 0 0 20px #eee;
-   font-size:small;
+   font-size:10px;
    font-style: bold;
    border-radius: 15px;
    display: inline-block;
@@ -993,14 +1063,15 @@ input:hover{
   background: linear-gradient(to right, #2BC0E4 0%, #EAECC6  61%, #e9220f  100%);
    top:0.7rem;
    margin: 12px;
-   padding: 10px 35px;
+   left:4rem;
+   padding: 10px 25px;
    text-align: center;
    text-transform: uppercase;
    transition: 0.7s;
    background-size: 200% auto;
    color: rgb(24, 8, 8);            
    box-shadow: 0 0 20px #eee;
-   font-size:small;
+   font-size:10px;
    font-style: bold;
    border-radius: 15px;
    display: inline-block;
