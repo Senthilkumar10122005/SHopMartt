@@ -49,7 +49,6 @@
 @media screen and(max-width:768px){
   .liss{
       font-size:10px;
-      float:right;
       display: inline-block;
       position: relative;
       right:2rem;
@@ -657,6 +656,7 @@ a{
   width:800px;
   height:600px;
     font-size: larger;
+    background: transparent;
     border:3px solid black;
     border-width: 4px 6px 6px 8px;
     overflow: hidden;
@@ -844,7 +844,7 @@ input:hover{
   display:inline-block;
   gap:3rem;
   width:450px;
-  height:50%;
+  height: 550px;
   border:3px solid black;
   border:4px 8px 4px 8px;
  border-radius:10px ;
@@ -884,7 +884,7 @@ input:hover{
   top:7.5rem;
   gap:3rem;
   width:450px;
-  height:560px;
+  height:550px;
   border:3px solid black;
   border:5px 10px 5px 10px;
  border-radius:10px ;
@@ -903,7 +903,7 @@ input:hover{
   top:9.7rem;
   gap:3rem;
   width:450px;
-  height:560px;
+  height:550px;
   border:3px solid black;
   border:4px 8.2px 4px 8.2px;
  border-radius:10px ;
@@ -993,7 +993,8 @@ input:hover{
 #img4{
   position:relative;
   left:3.3rem;
-  width:270px;
+  width:200px;
+  height: 100px;
   border-radius:12%;
   transition:box-shadow 2s infinite ease-in;
 }
@@ -1036,10 +1037,10 @@ input:hover{
   position:relative;
   display:flex;
   background: linear-gradient(to right, #2BC0E4 0%, #EAECC6  61%, #e9220f  100%);
-   top:0.8rem;
+   top:0.6rem;
    left:4rem;
    margin: 12px;
-   padding: 10px 25px;
+   padding: 8px 20px;
    text-align: center;
    text-transform: uppercase;
    transition: 0.7s;
@@ -1061,10 +1062,10 @@ input:hover{
   position:relative;
   display:flex;
   background: linear-gradient(to right, #2BC0E4 0%, #EAECC6  61%, #e9220f  100%);
-   top:0.7rem;
+   top:0.1rem;
    margin: 12px;
    left:4rem;
-   padding: 10px 25px;
+   padding: 8px 20px;
    text-align: center;
    text-transform: uppercase;
    transition: 0.7s;
